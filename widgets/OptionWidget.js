@@ -48,7 +48,7 @@ module.exports = React.createClass({
         this.props.onClose(this.props.title, this.props.navigator);
       }
     } else {
-      this._onChange(true)
+      this._onChange(!this.state.value)
       if (typeof this.props.onSelect === 'function') {
         this.props.onSelect(this.state.value);
       }
